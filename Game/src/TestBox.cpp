@@ -1,6 +1,7 @@
 #include "TestBox.h"
 #include <SDL.h>
 #include <SDL_image.h>
+#include <stdio.h>
 
 float _rotationSpeed = 1.0f;
 
@@ -32,6 +33,10 @@ void TestBox::Initialize(SDL_Renderer *renderer)
   _transform.scale.x = 1.0f;
   _transform.scale.y = 1.0f;
   _transform.scale.z = 1.0f;
+
+  _rotationSpeed = rand() % 10000 + 1; 
+  _transform.rotation.y = rand() % 10000 + 1;
+
 }
 
 void TestBox::Update(float dt)

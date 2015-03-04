@@ -3,7 +3,6 @@
 #include <SDL.h>
 #include <math.h>
 #include <SDL_image.h>
-#include <SDL_mixer.h>
 #include <InputManager.h>
 
 #define PIXELS_PER_METRE 8.0f
